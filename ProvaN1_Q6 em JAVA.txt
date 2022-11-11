@@ -1,0 +1,39 @@
+public static void main(String[] args) 
+	
+	{
+		int A, B, C, R1, R2, Q1, Q2, X;
+		
+		A = 9; B = 10; C = 15;
+		
+		Q1 = B / A;
+		Q2 = B / 6;
+		
+		R1 = C % A;
+		R2 = B % C;
+			
+		if((R1 + R2) >= 5)
+		{
+			if(R1 > 2)
+			{
+				X = Q1 + Q2 + 9;
+				X--;
+			}
+			
+			else
+				
+			{
+				X = Q1 + Q2 + 8;
+				X--;
+			}
+			
+		}
+		
+		else
+			
+		{
+			X = Q1 + Q2 + 10;
+			X--;
+		}
+		
+		System.out.println("O valor de X é igual a: " + X);
+	}

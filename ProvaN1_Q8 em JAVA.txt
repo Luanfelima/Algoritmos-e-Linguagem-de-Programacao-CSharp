@@ -1,0 +1,32 @@
+public static void main(String[] args)
+	
+	{
+
+		int[] lista = {3, 5, 8, 1, 10};
+		double media;
+		int maior = lista[0];
+		int menor = lista[0];
+		int i = 0;
+		
+		
+		for (i = 1; i < 5; i++)
+		{
+			if(lista[i] > maior)
+			{
+				maior = lista[i];
+			}
+			if(lista[i] < menor)
+			{
+				menor = lista[i];
+			}
+			
+			
+		}
+		
+		media = (maior + menor) / 2.0;
+		
+		System.out.println("O menor valor foi de: " + menor);
+		System.out.println("O maior valor foi de: " + maior);
+		System.out.println("A media da sala foi de: " + media);
+							
+	}
